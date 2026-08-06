@@ -564,7 +564,7 @@ export function AutopilotDialog(props: AutopilotDialogProps) {
           {/* Left: Runbook */}
           <div className="flex-none lg:flex-1 min-h-0 min-w-0 flex flex-col border-b lg:border-b-0 lg:border-r">
             <div className="px-6 pt-5 pb-3 shrink-0">
-              <div className="mb-1.5 flex items-center gap-1 text-xs font-medium text-foreground">
+              <div className="mb-1.5 flex items-center gap-1 text-caption font-medium text-foreground">
                 <span>{t(($) => $.dialog.title_label)}</span>
                 <span aria-hidden="true" className="text-destructive">*</span>
                 <span className="sr-only">{t(($) => $.dialog.required)}</span>
@@ -576,7 +576,7 @@ export function AutopilotDialog(props: AutopilotDialogProps) {
                   required
                   defaultValue={initial.title ?? ""}
                   placeholder={t(($) => $.dialog.title_placeholder)}
-                  className="text-base font-medium"
+                  className="text-title-sm font-medium"
                   onChange={setTitle}
                   onSubmit={handleSubmit}
                 />
